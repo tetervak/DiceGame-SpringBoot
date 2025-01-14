@@ -18,7 +18,7 @@ public class DiceRollerServiceImpl implements DiceRollerService {
     }
 
     @Override
-    public DiceRollData getRollData(int numberOfDice) {
+    public synchronized DiceRollData getRollData(int numberOfDice) {
 
         if(numberOfDice < 1){
             throw new IllegalArgumentException("Illegal Number of Dice " + numberOfDice);
