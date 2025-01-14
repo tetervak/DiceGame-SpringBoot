@@ -3,10 +3,12 @@ package ca.tetervak.dicegame.model.impl;
 import ca.tetervak.dicegame.model.Dice;
 import ca.tetervak.dicegame.model.DiceRollData;
 import ca.tetervak.dicegame.model.DiceRollerService;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class DiceRollerServiceImpl implements DiceRollerService {
 
     private final Dice dice;

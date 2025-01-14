@@ -1,9 +1,11 @@
 package ca.tetervak.dicegame.model.impl;
 
 import ca.tetervak.dicegame.model.Dice;
+import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
+@Component
 public class DiceImpl implements Dice {
 
     public static final int INIT_VALUE = 1;
